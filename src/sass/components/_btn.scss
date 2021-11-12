@@ -1,0 +1,29 @@
+.btn {
+  padding: 12px 35px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.btn_color_dark {
+  background-color: var($mainDarkColor);
+  color: var($mainLightColor);
+  transition: background-color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: var($accentDarkBtnColor);
+  }
+}
+
+.btn_color_light {
+  background-color: var($mainLightColor);
+  color: var($mainDarkColor);
+  transition: background-color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: var($accentLightBtnColor);
+  }
+}
