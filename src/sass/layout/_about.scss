@@ -3,6 +3,11 @@
   background-color: $mainBackgroundColor;
   background-size: 280px;
 }
+.about__container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+}
 
 .about__pre-title {
   font-family: $titleFont;
@@ -37,6 +42,10 @@
   margin-left: auto;
   margin-right: auto;
   background-image: url(/images/milkdrops.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/milkdrops-2x.png);
+  }
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -62,10 +71,14 @@
   color: $secondaryTextColor;
 }
 
+.about__text-after {
+  display: block;
+  margin-top: 25px;
+}
+
 .about__btn {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50px;
 }
 
 .about__svg-btn {
