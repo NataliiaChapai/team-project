@@ -1,0 +1,69 @@
+.about {
+  padding-top: 125px;
+  background-color: $mainBackgroundColor;
+  background-size: 280px;
+}
+
+.about__pre-title {
+  font-family: $titleFont;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  color: $LabelColor;
+  text-transform: uppercase;
+}
+
+.about__title {
+  margin-top: 15px;
+  margin-bottom: 26px;
+  font-family: $titleFont;
+  text-align: center;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  color: $mainDarkColor;
+  text-transform: uppercase;
+}
+
+.about__img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+}
+
+.about__text-container {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/images/milkdrops.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.about__text-first {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 46px;
+  margin-bottom: 32px;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+.about__text-second {
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $secondaryTextColor;
+}
+
+.about__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
