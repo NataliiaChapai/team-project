@@ -1,9 +1,8 @@
 .gallery {
-  max-width: 320px;
-  background-repeat: no-repeat;
-  background: url(../images/collage.jpg);
+  background-position: center;
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%, #ffffff);
 }
-
 .gallery__img {
-  width: 100%;
+  max-width: 364px;
+  margin: 0 auto;
 }
