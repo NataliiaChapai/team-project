@@ -1,5 +1,6 @@
 .contacts {
 background-color: #FFF5F6;
+background-image: linear-gradient(to bottom, #FFFFFF 5.5%, #FFF5F6 5.5%, #FFF5F6);
 }
 .contacts__container {
 margin: 0 auto;
@@ -92,7 +93,7 @@ color: #907E82;
 .btn_color_dark {
   margin-bottom: 10px;  
 }
-.btn__use--white {
+.contacts-button > .btn__svg--white {
     fill: #FFFFFF;
 }
 

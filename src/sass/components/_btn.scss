@@ -9,21 +9,21 @@
 }
 
 .btn_color_dark {
-  background-color: var($mainDarkColor);
-  color: var($mainLightColor);
+  background-color: $mainDarkColor;
+  color: $mainLightColor;
   transition: background-color 300ms ease-in-out;
   &:hover,
   &:focus {
-    background-color: var($accentDarkBtnColor);
+    background-color: $accentDarkBtnColor;
   }
 }
 
 .btn_color_light {
-  background-color: var($mainLightColor);
-  color: var($mainDarkColor);
+  background-color: $mainLightColor;
+  color: $mainDarkColor;
   transition: background-color 300ms ease-in-out;
   &:hover,
   &:focus {
-    background-color: var($accentLightBtnColor);
+    background-color:$accentLightBtnColor;
   }
 }
