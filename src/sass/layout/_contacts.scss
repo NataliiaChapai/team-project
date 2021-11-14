@@ -19,6 +19,8 @@
    margin-left: auto;
    margin-right: auto;
    padding: 43px 20px;
+   display: flex;
+   flex-direction: column;
  
 }
 .contacts-list__card:not(:last-child) {
@@ -28,13 +30,30 @@
 .contacts-list__text {
 font-size: 12px;
 line-height: 1.83;
+display: flex;
+flex-direction: column;
 }
-.contacts-list__text.place {
+.contacts-list__text:not(:last-child) {
+margin-bottom: 10px;
+}
+.contacts-list__text--place {
 color: #FFFF;
 text-transform: uppercase;
 height: 16px;
 width: 100%;
 border-radius: 4px;
+justify-content: center;
+text-align: center;
+}
+.contacts-list__text--place-first {
+    background-color: #F0D1A5;
+    padding: 4px 25px;
+    width: 80px;
+}
+.contacts-list__text--place-second {
+    background-color: #C2E297;
+    padding: 4px 28px;
+    width: 130px;
 }
 .contacts-list__text--time {
 color: #FFA5BA;
@@ -45,6 +64,17 @@ font-size: 12px;
 line-height: 1.5;
 color: #907E82;
 }
+.contacts-list__text--description:not(:last-child) {
+    margin-bottom: 25px;
+}
 .contacts-address__link {
    cursor: pointer;
+}
+.contacts-list__item--first {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    padding: 25px 0;
+}
+.contacts-address {
+    margin-top: 25px;
 }
