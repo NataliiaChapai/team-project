@@ -12,19 +12,39 @@
     margin-bottom: 38px;
   }
 }
-.advantages__img {
-  display: inline-flex;
-  height: 50px;
-  width: auto;
-  margin-bottom: 16px;
-}
-
-.advantages__img::before {
+.first::before {
+  display: block;
   content: '';
   height: 50px;
-  width: auto;
+  width: 33px;
+  background-image: url(/images/Advantage1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 16px;
 }
-
+.second::before {
+  display: block;
+  content: '';
+  height: 50px;
+  width: 50px;
+  background-image: url(/images/Advantage2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 16px;
+}
+.third::before {
+  display: block;
+  content: '';
+  height: 50px;
+  width: 44px;
+  background-image: url(/images/Advantage3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 16px;
+}
 .advantages__list-title {
   font-family: $titleFont;
   font-weight: normal;
@@ -41,53 +61,3 @@
   line-height: 1.7;
   max-width: 230px;
 }
-
-// .advantages__container {
-//   background-color: $mainBackgroundColor;
-//   height: 1688px;
-//   width: 320px;
-//   padding-left: 20px;
-// }
-
-// .advantages__list {
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     width: 100%;
-//   }
-// }
-
-// .advantages__icon {
-//   margin-top: 38px;
-//   width: 33px;
-//   height: 50px;
-//   @media screen and (min-width: 768px) {
-//     width: 100%;
-//   }
-// }
-
-// .t__number {
-//   margin-top: 16px;
-// }
-
-// .t {
-//   font-family: Titan One;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 36px;
-//   line-height: 41px;
-//   letter-spacing: 0.04em;
-//   text-transform: uppercase;
-
-//   color: #d41443;
-// }
-
-// .gallery {
-//   max-width: 320px;
-//   background-repeat: no-repeat;
-//   position: absolute;
-//   background: url(../images/collage.jpg);
-// }
-// .gallery__img {
-//   width: 100%;
-// }
