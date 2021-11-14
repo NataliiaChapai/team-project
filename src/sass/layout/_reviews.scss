@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.reviews__slider {
+  position: relative;
+  display: block;
+}
+.slick-arrow {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: #d9d9d9;
+}
+.slick-next {
+  position: absolute;
+  display: block;
+  text-align: center;
+  right: 45%;
+}
+.slick-prev {
+  position: absolute;
+  bottom: -12px;
+  left: 45%;
+}
+/*------picture------*/
+
+.reviews__picture {
+  border-radius: 50%;
+  display: block;
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+/*-----response-----*/
+
+.reviews__response {
+  width: 100%;
+  height: 308px;
+  margin-top: 29px;
+  background: #fafafa;
+  padding: 43px 50px 20px 50px;
+}
+.reviews__text {
+  text-align: center;
+  background: repeating-linear-gradient(
+    0deg,
+    #fafafa 0px,
+    #fafafa 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+  height: auto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  display: inline-block;
+}
+
+/*--------location--------*/
+
+.reviews__location {
+  padding: 30px 50px 30px 50px;
+}
+.reviews__location {
+  display: block;
+  text-align: center;
+}
+.reviews__location span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #c7133e;
+  border-radius: 50%;
+  position: relative;
+}
+.reviews__location span::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #c7133e;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.reviews__location span::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #c7133e;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.reviews-location__text {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 35px;
+}
