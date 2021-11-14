@@ -30,8 +30,11 @@ line-height: 1.83;
 .contacts-list__text.place {
 color: #FFFF;
 text-transform: uppercase;
+height: 16px;
+width: 100%;
+border-radius: 4px;
 }
-.contacts-list__text.time {
+.contacts-list__text--time {
 color: #FFA5BA;
 text-transform: uppercase;
 }
@@ -39,4 +42,7 @@ text-transform: uppercase;
 font-size: 12px;
 line-height: 1.5;
 color: #907E82;
+}
+.contacts-address__link {
+    cursor: pointer;
 }
