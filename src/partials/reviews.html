@@ -1,14 +1,13 @@
 <div class="reviews  container">
     <h1 hidden>reviews</h1>
-    <ul class="reviews__slider">
+    <ul class="autoplay">
         <li>
-                <picture>
+            <picture>
                     <source srcset="../src/images/customer1.jpg 1x, ../src/images/customer1-2x.jpg 2x" media="(min-widht=1200px)">
                     <source srcset="../src/images/customer1.jpg 1x, ../src/images/customer1-2x.jpg 2x" media="(min-widht=768px)">
                     <img class="reviews__picture" src="../src/images/customer1.jpg" alt="user">
-                </picture>
-
-                <div class="reviews__response">
+            </picture>
+            <div class="reviews__response">
                     <svg class="reviews-response__icon" width="54" height="40">
                         <use href="./images/sprite.svg#icon-brackets"></use>
                     </svg>
@@ -17,23 +16,19 @@
                         accumsan
                         congue. Lorem ipsum primis in nibh vel risus.
                     </p>
-                </div>
-
-                <div class="reviews__location">
+            </div>
+            <div class="reviews__location">
                     <span class="reviews__point"></span>
                     <p class="reviews-location__text">Emily, Los Angeles</p>
-                </div>
-            
+            </div>
         </li>
-
 
         <li >
             <picture>
                 <source srcset="../src/images/customer2.jpg 1x, ../src/images/customer2-2x.jpg 2x" media="(min-widht=1200px)">
                 <source srcset="../src/images/customer2.jpg 1x, ../src/images/customer2-2x.jpg 2x" media="(min-widht=768px)">
                 <img class="reviews__picture" src="../src/images/customer2.jpg" alt="user">
-            </picture>
-            
+            </picture> 
             <div class="reviews__response">
                 <svg class="reviews-response__icon" width="54" height="40">
                     <use href="./images/sprite.svg#icon-brackets"></use>
@@ -43,7 +38,6 @@
                     safely give it!
                 </p>
             </div>
-            
             <div class="reviews__location">
                 <span class="reviews__point"></span>
                 <p class="reviews-location__text">Olya, Lviv</p>
@@ -56,7 +50,6 @@
                 <source srcset="../src/images/customer3.jpg 1x, ../src/images/customer3-2x.jpg 2x" media="(min-widht=768px)">
                 <img class="reviews__picture" src="../src/images/customer3.jpg" alt="user">
             </picture>
-            
             <div class="reviews__response">
                 <svg class="reviews-response__icon" width="54" height="40">
                     <use href="./images/sprite.svg#icon-brackets"></use>
@@ -65,13 +58,16 @@
                     Ice cream is super tasty, sweet, but not sugary, and really tender, like yogurt.
                 </p>
             </div>
-            
             <div class="reviews__location">
                 <span class="reviews__point"></span>
                 <p class="reviews-location__text">Olivia, New York</p>
             </div>
         </li>
+
     </ul>
+
+
+    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -80,8 +76,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
         integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     <script>
-        $('.reviews__slider').slick();
-        
+        $('.autoplay').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots:true
+            }); 
     </script>
+
 </div>
