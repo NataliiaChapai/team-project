@@ -1,7 +1,7 @@
 .contacts {
   background-color: #FFF5F6;
 }
-.contacts-section__container {
+.contacts__container {
   margin: 0 auto;
   width: 100%;
   height: auto;  
@@ -23,10 +23,20 @@
     margin-bottom: 20px;
 }
 
-.contacts-list__title {
-font-weight: 500;
+.contacts-list__text {
 font-size: 12px;
 line-height: 1.83;
-letter-spacing: 0.04em;
-color: #000000;
+}
+.contacts-list__text.place {
+color: #FFFF;
+text-transform: uppercase;
+}
+.contacts-list__text.time {
+color: #FFA5BA;
+text-transform: uppercase;
+}
+.contacts-list__text--description {
+font-size: 12px;
+line-height: 1.5;
+color: #907E82;
 }
