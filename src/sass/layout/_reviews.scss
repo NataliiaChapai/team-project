@@ -52,6 +52,7 @@
   background: #fafafa;
   padding: 43px 50px 20px 50px;
   position: relative;
+  z-index: -2;
 }
 .reviews__text::before {
   content: '';
@@ -62,16 +63,18 @@
   background-image: url(/images/brackets-2.png);
   background-repeat: no-repeat;
   position: absolute;
+  top: 10%;
+  right: 60%;
   z-index: -1;
 }
 .reviews__text {
   text-align: center;
   background: repeating-linear-gradient(
     180deg,
-    #fafafa 0px,
-    #fafafa 30px,
-    #e1e1e1 30px,
-    #e1e1e1 31px
+    rgba(250, 250, 250, 0) 0px,
+    rgba(250, 250, 250, 0) 29px,
+    rgba(225, 225, 225, 1) 29px,
+    rgba(225, 225, 225, 1) 30px
   );
   height: auto;
   font-size: 12px;
