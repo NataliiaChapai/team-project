@@ -14,21 +14,10 @@
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
+    width: 1280px;
   }
-}
-.reviews__slider {
-  position: relative;
-  display: block;
-}
-.slick-arrow {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  font-size: 0;
-  background-color: #ffffff;
 }
 
 /*------picture------*/
@@ -52,6 +41,7 @@
   background: #fafafa;
   padding: 43px 50px 20px 50px;
   position: relative;
+  z-index: -2;
 }
 .reviews__text::before {
   content: '';
@@ -62,36 +52,33 @@
   background-image: url(/images/brackets-2.png);
   background-repeat: no-repeat;
   position: absolute;
+  top: 10%;
+  right: 60%;
   z-index: -1;
 }
 .reviews__text {
   text-align: center;
   background: repeating-linear-gradient(
     180deg,
-    #fafafa 0px,
-    #fafafa 30px,
-    #e1e1e1 30px,
-    #e1e1e1 31px
+    rgba(250, 250, 250, 0) 0px,
+    rgba(250, 250, 250, 0) 29px,
+    rgba(225, 225, 225, 1) 29px,
+    rgba(225, 225, 225, 1) 30px
   );
   height: auto;
   font-size: 12px;
   font-weight: 500;
   line-height: calc(31 / 12);
-}
-.reviews-response__icon {
-  margin-right: 10px;
-  margin-bottom: -30px;
-  margin-left: -10px;
+  padding-left: 7px;
+  padding-right: 16px;
 }
 
 /*--------location--------*/
 
 .reviews__location {
-  padding: 30px 50px 30px 50px;
-}
-.reviews__location {
   display: block;
   text-align: center;
+  padding: 30px 50px 30px 50px;
 }
 .reviews__location span {
   display: inline-block;
@@ -126,25 +113,16 @@
 .reviews-location__text {
   text-align: center;
   margin-top: 18px;
-  margin-bottom: 35px;
-}
-.reviews-location__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.reviews-location__point:not(:last-child) {
-  margin-right: 18px;
-}
-.reviews-location__point {
-  width: 20px;
-  height: 20px;
+/*------pagination-------*/
+
+.slick-arrow {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  display: block;
-  background-color: #d9d9d9;
-  justify-content: center;
-  align-items: center;
+  font-size: 0;
+  background-color: #ffffff;
 }
 .autoplay .slick-dots {
   display: flex;
@@ -153,7 +131,10 @@
 }
 .autoplay .slick-dots li {
   list-style: none;
-  margin-left: 10px;
+  margin-left: 9px;
+}
+.autoplay .slick-dots li :not(first-child) {
+  margin-right: 9px;
 }
 .autoplay .slick-dots button {
   font-size: 0;

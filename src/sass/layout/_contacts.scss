@@ -86,15 +86,21 @@
   margin-right: auto;
   margin-top: 54px;
 }
-.btn {
+.btn.btn_color_light--contacts {
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
+  width: 161px;
 }
-.btn_color_dark {
+.btn.btn_color_dark--contacts {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
   margin-bottom: 10px;
+  width: 161px;
 }
-.btn__svg {
-  margin-left: 14px;
+.btn__svg--contacts {
+  margin-left: 10px;
   width: 5px;
   height: 8px;
 }
