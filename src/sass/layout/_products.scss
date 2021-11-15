@@ -4,16 +4,19 @@
 
 .products-section {
   margin: 0 auto;
-  max-width: 320px;
+ width: 480px;
   padding: 121px 20px 98px 20px;
 
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1279px)  {
+    width: 768px;
+    padding: 122px 34px 112px 34px;
+    
+  }
 
-  // @media screen and (min-width: 1280px) {
-  //   width: 1280px;
-  // }
+  @media screen and (min-width: 1280px)  {
+    width: 1280px;
+    padding: 127px 116px 119px 117px;
+  }
 }
 
 .products-section__text {
@@ -24,6 +27,8 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   color: $LabelColor;
+
+
 }
 
 .products-section__title {
@@ -40,18 +45,62 @@
   margin-bottom: 144px;
 }
 
+.products-card {
+  @media screen and (min-width: 768px) and (max-width: 1279px){
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .products-card_item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 485px;
+  padding-left: 39px;
+  padding-right: 41px;
 
   border-radius: 24px;
 
   &:not(:last-child) {
     margin-bottom: 130px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-basis: calc((100% - 40px) / 3 );
+    margin-right: 20px;
+    width: 220px;
+    height: 485px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:last-child{
+      margin-right:0;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: calc((100% - 60px) / 3 );
+      margin-right: 30px;
+      width: 329px;
+      height: 525px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      &:last-child{
+        margin-right:0;
+        }
+      }
 }
 
 .one {
@@ -160,7 +209,8 @@
   }
 }
 
-.products-card__text {
+.products-card__text{
+  display: none;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
@@ -170,11 +220,22 @@
   text-align: center;
   letter-spacing: 0.04em;
   margin-bottom: 30px;
-  margin-left: 41px;
-  margin-right: 39px;
 
   color: $mainLightColor;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
+
+.products-card__text.mob{
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 
 .button-card {
   width: 40px;
