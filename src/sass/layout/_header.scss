@@ -1,51 +1,56 @@
 .header__wrapper {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 15;
-  background-color: $mainColor;
-  padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    background-color: $mainColor;
+     padding: 0 20px;
 }
 
-.header__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo img {
-  width: 199px;
-  padding: 6px 0;
+    width: 199px;
+    padding: 6px 0;
 }
 
 .header__burger {
-  background-color: transparent;
-  display: block;
-  position: relative;
-  cursor: pointer;
-  width: 20px;
-  height: 12px;
-
-  & span {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 5px;
-    background-color: $mainDarkColor;
-  }
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: $mainDarkColor;
-  }
-  &:before {
-    top: 0;
-  }
-  &:after {
-    bottom: 0;
-  }
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 12px;
+    background-color: $mainColor;
+    
+        
+    & span {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 5px;
+        right: 2px;
+        background-color: $mainDarkColor;
+    }
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            
+            background-color: $mainDarkColor;
+        }
+        &:before {
+            top: 0;
+            right: 2px;
+        }
+        &:after {
+            bottom: 0;
+            right: 2px;
+        }
 }

@@ -1,16 +1,15 @@
 .hero__container{
     width: 100%;
     background-color: $mainColor;
+    overflow: overlay;
 }
-.hero__wrapper {
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 .hero__body {
     position: relative;
     width: 320px;
     height: 502px;  
-    
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .hero__circle {
     position: absolute;
@@ -41,6 +40,7 @@
     width: 171px;
     bottom: 0;
     left: 97px;
+    
 }
 
 .hero__title--dark {
@@ -70,5 +70,4 @@
     line-height: 10px;
     color: $mainDarkColor;
     padding: 0 5px;
-    
 }
