@@ -1,6 +1,9 @@
 .contacts {
   background-image: linear-gradient(to bottom, #FFFFFF 10.7%, #FFF5F6 10.7%, #FFF5F6);
   padding-top: 86px;
+@media screen and (min-width: 768px) {
+   background-image: linear-gradient(to bottom, #FFFFFF 21.7%, #FFF5F6 21.7%, #FFF5F6);
+}
 }
 .contacts__container {
   margin: 0 auto;
@@ -11,7 +14,7 @@
 }
 @media screen and (min-width: 768px) {
   width: 768px;
-  padding: 0 24px;
+  padding: 0 36px;
 }
 @media screen and (min-width: 1280px) {
   width: 1280px;
@@ -26,6 +29,7 @@
    margin-right: auto;
    justify-content: space-between;
    align-content: center;
+   margin-bottom: 81px;
  }
 }
 .contacts-list__card {
@@ -42,10 +46,14 @@
 @media screen and (min-width: 768px) {
   height: 544px;
   padding: 50px 31px;
+  margin: 0;
 }
 }
 .contacts-list__card:not(:last-child) {
   margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  margin-bottom: 0;
+}
 }
 .contacts-list__text {
   font-size: 12px;
@@ -143,12 +151,22 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 54px;
+@media screen and (min-width: 768px) {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0;
+}
 }
 .btn.btn_color_light--contacts {
   margin-left: auto;
   margin-right: auto;
   padding: 12px;
   width: 161px;
+@media screen and (min-width: 768px) {
+  margin: 0;
+  width: 174px;
+}
 }
 .btn.btn_color_dark--contacts {
   margin-left: auto;
@@ -156,6 +174,11 @@
   padding: 12px;
   margin-bottom: 10px;
   width: 161px;
+@media screen and (min-width: 768px) {
+  margin: 0;
+  width: 192px;
+  margin-right: 14.5px;
+}
 }
 .btn__svg--contacts {
   margin-left: 10px;
