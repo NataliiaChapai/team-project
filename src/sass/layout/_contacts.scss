@@ -63,6 +63,11 @@
   margin-bottom: 14px;
  }
 }
+// .contacts-list__text--time {
+//   @media screen and (min-width: 768px) {
+//   margin-bottom: 16px;
+// }
+// }
 .contacts-list__text.contacts-list__text--place {
   color: #ffff;
   text-transform: uppercase;
@@ -128,6 +133,9 @@
 .contacts-address {
   margin-top: 25px;
   font-style: normal;
+@media screen and (min-width: 768px) {
+  margin-top: 30px;
+}
 }
 .contacts-buttons {
   display: flex;
