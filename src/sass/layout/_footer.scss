@@ -30,12 +30,6 @@
     padding-right: 115px;
     margin-top: 153px;
   }
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   width: 1280px;
-  // }
 }
 .footer__text__title--one {
   font-family: $titleFont;
@@ -92,16 +86,12 @@
 }
 
 .footer__text {
-  width: 234px;
-
-  @media screen and (min-width: 768px), (min-width: 1280px) {
-    width: 50%;
-  }
-
-  //   @media screen and (min-width: 768px) and (max-width: 1279px), (min-width: 1280px) {
-  //     margin-left: 36px;
-  //     width: 100%;
-  // }
+  width: 234px;     
+  
+    @media screen and (min-width: 768px), (min-width: 1280px) {
+       width: 50%;       
+     
+    } 
 }
 
 .footer__list__social {
@@ -111,10 +101,7 @@
   padding: 0;
   margin-right: 0;
   margin-bottom: 46px;
-  //margin-right: 20.53px;
 
-  //   @media screen and (min-width: 768px) and (max-width: 1279px), (min-width: 1280px) {
-  //     margin-bottom: 49.27px;
 
   //     // @media screen and (min-width: 320px) {
   //     //   margin-right: 20.53px;
@@ -138,12 +125,6 @@
     font-size: 14px;
   }
 
-  //   @media screen and (min-width: 768px) and (max-width: 1279px), (min-width: 1280px) {
-
-  //     font-size: 16px;
-  //     line-height: 186%;
-  //     letter-spacing: 0.02em;
-  // }
 }
 
 .footer__contact {
@@ -171,10 +152,12 @@
   color: $secondaryTextColor;
 
   @media screen and (min-width: 768px), (min-width: 1280px) {
+
     max-width: 100%;
-    line-height: 186%;
+    line-height: 1.86;
     margin-bottom: 18px;
   }
+
 }
 
 .total__link__social {
@@ -190,29 +173,15 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: $accentDarkBtnColor;
+  background-color: $accentDarkBtnColor;
   }
 }
 
 .total__icon {
   width: 20px;
-  height: 20px;
-  fill: $mainLightColor;
-}
-
-// .footer__social {
-//   outline: 1px solid tomato;
-//     width: 100%;
-//   margin-right: 20,53px;
-// }
-
-//  .footer__social {
-//     @media screen and (min-width: 320px) {
-//    margin-right: 20.53px;
-//   }
-//  }
-
-// @media screen and (min-width: 480px) and (max-width: 767px) {
+  height: 20px;    
+  fill: $mainLightColor;   
+} 
 
 .footer__social__text {
   @media screen and (min-width: 768px), (min-width: 1280px) {
@@ -225,34 +194,3 @@
     width: 50%;
   }
 }
-
-// .footer__social {
-//   margin-right: 36px;
-
-//   @media screen and (min-width: 768px) and (max-width: 1279px), (min-width: 1280px) {
-//     margin-right: 0px;
-// }
-
-// }
-
-//  }
-
-//   .footer__social__text {
-
-//     @media screen and (min-width: 768px) and (max-width: 1279px), (min-width: 1280px) {
-//       display: flex;
-//     align-items:stretch;
-//     justify-content: space-around;
-
-//   }
-// }
-
-// @media screen and (min-width: 768px) and (max-width: 1279px) and (min-width: 1280px) {
-//   .social__contact {
-//     margin-right: 121px;
-//   }
-// }
-
-// .social__contact {
-//  outline: 1px solid tomato;
-// }
