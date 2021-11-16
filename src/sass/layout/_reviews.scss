@@ -81,6 +81,9 @@
     top: 17%;
     left: 6%;
   }
+  @media screen and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+    background-image: url(/images/brackets-2.png);
+  }
 }
 .reviews__text {
   text-align: center;
