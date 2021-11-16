@@ -7,6 +7,12 @@
 }
 @media screen and (min-width: 1280px) {
   padding-top: 132px;
+  background-image: url(/src/images/drops.png);
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url(/src/images/drops-2x.png);
+  }
 }
 }
 .contacts__container {
