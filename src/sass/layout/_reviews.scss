@@ -4,19 +4,23 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 320px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 74px;
+    padding-right: 74px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1280px;
+    padding-left: 178px;
+    padding-right: 176px;
   }
 }
 
@@ -42,6 +46,22 @@
   padding: 43px 50px 20px 50px;
   position: relative;
   z-index: -2;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    height: 200px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 164px;
+    padding-left: 60px;
+    padding-right: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    height: 138px;
+    padding-left: 59px;
+    padding-right: 54px;
+  }
 }
 .reviews__text::before {
   content: '';
@@ -53,8 +73,17 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 10%;
-  right: 60%;
   z-index: -1;
+  @media screen and (min-width: 480px) {
+    top: 15%;
+  }
+  @media screen and (min-width: 768px) {
+    top: 17%;
+    left: 6%;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+    background-image: url(/images/brackets-2.png);
+  }
 }
 .reviews__text {
   text-align: center;
@@ -71,6 +100,18 @@
   line-height: calc(31 / 12);
   padding-left: 7px;
   padding-right: 16px;
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 44px;
+    font-size: 14px;
+    line-height: calc(30 / 14);
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 28px;
+    padding-right: 35px;
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
 }
 
 /*--------location--------*/
@@ -84,7 +125,7 @@
   display: inline-block;
   width: 4px;
   height: 4px;
-  background-color: #c7133e;
+  background-color: $mainDarkColor;
   border-radius: 50%;
   position: relative;
 }
@@ -93,7 +134,7 @@
   display: inline-block;
   width: 4px;
   height: 4px;
-  background-color: #c7133e;
+  background-color: $mainDarkColor;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -104,7 +145,7 @@
   display: inline-block;
   width: 4px;
   height: 4px;
-  background-color: #c7133e;
+  background-color: $mainDarkColor;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -122,7 +163,7 @@
   height: 12px;
   border-radius: 50%;
   font-size: 0;
-  background-color: #ffffff;
+  background-color: $mainLightColor;
 }
 .autoplay .slick-dots {
   display: flex;
@@ -150,5 +191,5 @@
   background-repeat: no-repeat;
   background-position: center;
   bottom: none;
-  background-color: #fff;
+  background-color: $mainLightColor;
 }
