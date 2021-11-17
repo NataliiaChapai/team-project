@@ -1,12 +1,27 @@
 .contacts {
   background-image: linear-gradient(to bottom, #FFFFFF 10.7%, #FFF5F6 10.7%, #FFF5F6);
   padding-top: 86px;
+  position: relative;
+  
 @media screen and (min-width: 768px) {
    background-image: linear-gradient(to bottom, #FFFFFF 24.7%, #FFF5F6 24.7%, #FFF5F6);
    padding-top: 119px;
 }
 @media screen and (min-width: 1280px) {
   padding-top: 132px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/drops.png),
+  linear-gradient(
+    to bottom, #FFFFFF 24.7%, #FFF5F6 24.7%, #FFF5F6);
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  background-image: url(../images/drops-2x.png),
+  linear-gradient(
+  to bottom, #FFFFFF 24.7%, #FFF5F6 24.7%, #FFF5F6);
+  }
 }
 }
 .contacts__container {
