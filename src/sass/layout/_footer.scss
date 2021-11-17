@@ -1,17 +1,12 @@
 .footer {
   width: 100%;
   background-color: $mainBackgroundColor;
-  padding-left: 20px;
-  padding-right: 20px;
+
   padding-top: 113px;
   @media screen and (min-width: 768px) {
-    padding-left: 36px;
-    padding-right: 36px;
     padding-top: 158px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 115px;
-    padding-right: 115px;
     padding-top: 165px;
   }
 }
@@ -20,17 +15,22 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }
 .footer__text__title--one {
@@ -138,17 +138,17 @@
 
 .footer__copyright {
   padding-bottom: 25px;
-  margin-top: 22px;
+  padding-top: 22px;
   width: 100%;
   border-top: 1px solid $strokeColor;
   @media screen and (min-width: 768px) {
     padding-bottom: 18px;
-    margin-top: 29px;
+    padding-top: 29px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 37px;
-    margin-top: 9px;
+    padding-bottom: 10px;
+    padding-top: 9px;
   }
 }
 
@@ -166,7 +166,6 @@
   @media screen and (min-width: 768px), (min-width: 1280px) {
     max-width: 100%;
     line-height: 1.86;
-    margin-bottom: 18px;
   }
 }
 
