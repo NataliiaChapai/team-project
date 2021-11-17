@@ -53,21 +53,23 @@
   position: absolute;
   width: 62px;
   height: 24px;
-  margin-top: 318px;
+  top: 318px;
+  font-family: $mainFont;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   color: $mainLightColor;
   padding: 0 5px;
 }
 
 .hero__btn--him {
   position: absolute;
-  margin-top: 318px;
-  margin-left: 70px;
+  top: 318px;
+  left: 99px;
   width: 83px;
   height: 24px;
+  font-family: $mainFont;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   color: $mainDarkColor;
   padding: 0 5px;
 }
@@ -92,7 +94,7 @@
   .hero__container {
     max-width: 768px;
     height: 399px;
-    padding: 0 34p;
+    padding: 0 35px;
   }
   .hero__circle {
     top: 31px;
@@ -125,20 +127,14 @@
   .hero__btn--products {
     width: 62px;
     height: 24px;
-    margin-top: 202px;
-    font-size: 8px;
-    line-height: 10px;
-    color: $mainLightColor;
+    top: 202px;
     padding: 0 5px;
   }
   .hero__btn--him {
-    margin-top: 202px;
-    margin-left: 70px;
+    top: 202px;
+    left: 105px;
     width: 83px;
     height: 24px;
-    font-size: 8px;
-    line-height: 10px;
-    color: $mainDarkColor;
     padding: 0 5px;
   }
   .hero__image-milk {
@@ -158,7 +154,6 @@
     bottom: 59px;
     left: 154px;
     font-family: $mainFont;
-    font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 1.5;
@@ -177,7 +172,7 @@
     width: 16px;
     height: 16px;
     top: 94px;
-    right: 34px;
+    right: 35px;
     border-radius: 50%;
     background-color: $mainLightColor;    
   }
@@ -208,7 +203,7 @@
     width: 16px;
     height: 16px;
     top: 151px;
-    right: 34px;
+    right: 35px;
     border-radius: 50%;
     background-color: $mainLightColor;    
   }
@@ -236,22 +231,114 @@
   }
 }
 
-
-
 @media (min-width: 1280px) {
   .hero__container {
-/*     position: relative; */
     max-width: 1280px;
     height: 665px;
-    padding: 0 97px 0 46px;
+    padding: 0 115px;
   }
   .hero__circle {
-  /* position: absolute; */
-    top: 31px;
-    right: 137px;
+    top: 52px;
+    right: 267px;
     width: 538px;
     height: 538px;
     border-radius: 50%;
     background-color: $LabelColor;
+  }
+    .hero__title {
+    width: 277px;
+    top: 171px;
+    font-family: $titleFont;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: $mainLightColor;
+  }
+  .hero__title--dark {
+    color: $mainDarkColor;
+    font-size: 58px;
+    line-height: 0.91;
+  }
+  .hero__image {
+    width: 236px;
+    bottom: 0;
+    right: 450px;
+  }
+  .hero__btn--products {
+    width: 102px;
+    height: 40px;
+    top: 333px;
+    font-size: 14px;
+    line-height: 1.29px;
+
+  }
+  .hero__btn--him {
+    top: 333px;
+    left: 234px;
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.29;
+
+  }
+  .hero__image-milk {
+    width: 188px;
+    left: 77px;
+    bottom: 45px;
+  }
+  .hero__image-girl {
+    width: 293px;
+    right: 89px;
+    bottom: 0;
+  }
+  .hero__text {
+    width: 200px;
+    bottom: 102px;
+    left: 295px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+ .hero__button-arrow {
+    left: 295px;
+    bottom: 56px;
+    width: 26px;
+    height: 26px;
+  }
+  .hero__circle-min {
+    width: 30px;
+    height: 30px;
+    top: 156px;
+    right: 97px;   
+  }
+  .hero__quantity {
+    top: 160px;
+    right: 115px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .hero__pos-text {
+    top: 215px;
+    right: 115px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .hero__circle-min_second {
+    width: 30px;
+    height: 30px;
+    top: 248px;
+    right: 97px;   
+  }
+  .hero__quantity_second {
+    top: 251px;
+    right: 115px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .hero__pos-text_second {
+    top: 306px;
+    right: 115px;
+    font-size: 14px;
+    line-height: 1.29;
   }
 }
