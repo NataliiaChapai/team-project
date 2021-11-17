@@ -25,6 +25,7 @@
     padding: 39px 115px 139px 115px;
   }
 }
+
 .advantages__list-item {
   &:not(:last-child) {
     margin-bottom: 38px;
@@ -43,6 +44,9 @@
   height: 50px;
   width: 33px;
   background-image: url(/images/Advantage1.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/Advantage1-2х.png);
+  }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -60,6 +64,9 @@
   height: 50px;
   width: 50px;
   background-image: url(/images/Advantage2.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/Advantage2-2x.png);
+  }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -77,6 +84,9 @@
   height: 50px;
   width: 44px;
   background-image: url(/images/Advantage3.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/Advantage3-2x.png);
+  }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
