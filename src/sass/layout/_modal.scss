@@ -2,21 +2,16 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: $secondaryBackgroundColor;
+  background: rgba(214, 100, 134, 0.274);
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+  z-index: 2000;
+  transform: scale(1);
+  transition: transform 250ms ease;
 }
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
-.backdrop.is-hidden .modal {
-  transform: scale(2);
-}
+
 .modal {
   position: relative;
   width: 528px;
@@ -26,10 +21,17 @@
   transform: scale(1);
   transition: transform 300ms ease;
   padding: 40px;
+
   @media screen and (max-width: 767px) {
     width: 400px;
   }
 }
+
+.backdrop.is-open-modal {
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
 .modal__tittle {
   color: $mainDarkColor;
   font-size: 20px;
@@ -139,13 +141,13 @@
   width: 12px;
   height: 12px;
 }
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
+// .hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   overflow: hidden;
+//   border: 0;
+//   clip: rect(0 0 0 0);
+// }
