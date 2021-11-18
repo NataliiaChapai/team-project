@@ -3,7 +3,10 @@
 @import './utils/hidden';
 @import './base/common';
 @import './base/reset';
+@import './components/btn';
 @import './layout/header';
+@import './layout/modal';
+@import './layout/mobile-menu';
 @import './layout/hero';
 @import './layout/products';
 @import './layout/about';
@@ -12,4 +15,3 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
-@import './components/btn';

@@ -1,0 +1,22 @@
+.gallery {
+  background-position: center;
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%, #ffffff);
+}
+
+.gallery__container {
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.gallery__img {
+  width: 100%;
+}

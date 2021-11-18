@@ -1,0 +1,393 @@
+.products {
+  background-color: $mainLightColor;
+}
+
+.products-section {
+  margin: 0 auto;
+
+  padding: 121px 20px 98px 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+    padding: 122px 34px 112px 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 127px 116px 119px 117px;
+  }
+}
+
+.products-section__text {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: $LabelColor;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products-section__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $mainDarkColor;
+  margin-bottom: 144px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+    margin-bottom: 256px;
+  }
+}
+
+.products-card {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.products-card_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 485px;
+  padding-left: 39px;
+  padding-right: 41px;
+  overflow: hidden;
+  border-radius: 24px;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 130px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-basis: calc((100% - 40px) / 3);
+    margin-right: 20px;
+    width: 220px;
+    height: 510px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    width: 329px;
+    height: 525px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.products-card_item:hover,
+.products-card_item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+
+.one {
+  background: $mainColor;
+}
+
+.one .produkts-overlay {
+  background: rgba(248, 140, 165, 255);
+  border-radius: 10px;
+  // border: 1px solid #fb7093;
+  // border-bottom: 0;
+}
+.one::before {
+  display: flex;
+  content: '';
+  position: absolute;
+  transform: translate(0%, -88%);
+  width: 242px;
+  height: 252px;
+  margin-bottom: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/ice-cream.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/ice-cream-2x.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 220px;
+    height: 226px;
+    transform: translate(0%, -105%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    transform: translate(0%, -91%);
+  }
+}
+
+.two {
+  background: #f0d1a5;
+}
+.two .produkts-overlay {
+  background: rgba(232, 192, 134, 255);
+  border-radius: 10px;
+  // border: 1px solid #dea758;
+  // border-bottom: 0;
+}
+.two::before {
+  display: flex;
+  content: '';
+  position: absolute;
+  transform: translate(0%, -88%);
+  width: 242px;
+  height: 252px;
+  margin-bottom: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/ice-coffee.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/ice-coffee-2x.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 220px;
+    height: 226px;
+    transform: translate(0%, -105%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    transform: translate(0%, -91%);
+  }
+}
+
+.three {
+  background: #c2e297;
+}
+.three .produkts-overlay {
+  background: rgba(176, 212, 124);
+  border-radius: 10px;
+  // border: 1px solid #84a656;
+  // border-bottom: 0;
+}
+.three::before {
+  display: flex;
+  content: '';
+  position: absolute;
+  transform: translate(0%, -88%);
+  width: 242px;
+  height: 252px;
+  margin-bottom: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/milkshakes.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/milkshakes-2x.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 220px;
+    height: 226px;
+    transform: translate(0%, -105%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 335px;
+    height: 335px;
+    transform: translate(0%, -91%);
+  }
+}
+
+.products-card__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 161px;
+  margin-bottom: 30px;
+
+  color: $mainLightColor;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+
+  & .box__circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.products-card__text {
+  display: none;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+
+  color: $mainLightColor;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    line-height: 1.76;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.76;
+    font-size: 16px;
+  }
+}
+
+.products-card__text.mob {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-card {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+  margin-bottom: 41px;
+  background-image: url(../images/arrow-btn.png);
+  z-index: 2;
+  position: relative;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/arrow-btn-2x.png);
+  }
+}
+
+.produkts-thumb:hover .produkts-overlay {
+  transform: translate(0);
+}
+
+.produkts-thumb {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.produkts-overlay {
+  position: absolute;
+  padding: 20px 10px;
+  top: 110px;
+  right: 0;
+  bottom: 0;
+  // background: rgba(33, 150, 243, 0.9);
+  @media screen and (min-width: 1280px) {
+    padding: 30px;
+  }
+
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.produkts-overlay__text {
+  display: flex;
+  align-items: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.52;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+
+  color: $mainLightColor;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.produkts-thumb:hover .produkts-overlay__text {
+  transform: translateY(0);
+}
+.products-card__item:hover,
+.products-card__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}

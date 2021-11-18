@@ -1,0 +1,344 @@
+.hero {
+  width: 100%;
+  background-color: $mainColor;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+.hero__container {
+  position: relative;
+  max-width: 480px;
+  height: 502px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero__circle {
+  position: absolute;
+  top: 83px;
+  right: -62px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: $LabelColor;
+}
+
+.hero__title {
+  position: absolute;
+  width: 218px;
+  top: 193px;
+  font-family: $titleFont;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  color: $mainLightColor;
+}
+
+.hero__title--dark {
+  color: $mainDarkColor;
+  font-size: 48px;
+  line-height: 0.97;
+}
+
+.hero__image {
+  position: absolute;
+  width: 171px;
+  bottom: 0;
+  right: 32px;
+}
+
+.hero__btn--products {
+  position: absolute;
+  width: 62px;
+  height: 24px;
+  top: 318px;
+  font-family: $mainFont;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $mainLightColor;
+  padding: 0 5px;
+}
+
+.hero__btn--him {
+  position: absolute;
+  top: 318px;
+  left: 99px;
+  width: 83px;
+  height: 24px;
+  font-family: $mainFont;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $mainDarkColor;
+  padding: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .hero__image-milk,
+  .hero__image-girl,
+  .hero__text,
+  .hero__button-arrow,
+  .hero__circle-min,
+  .hero__quantity,
+  .hero__pos-text,
+  .hero__circle-min_second,
+  .hero__quantity_second,
+  .hero__pos-text_second  {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .hero__container {
+    max-width: 768px;
+    height: 399px;
+    padding: 0 35px;
+  }
+  .hero__circle {
+    top: 31px;
+    right: 137px;
+    width: 324px;
+    height: 322px;
+    border-radius: 50%;
+    background-color: $LabelColor;
+  }
+  .hero__title {
+    width: 162px;
+    top: 102px;
+    font-family: $titleFont;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    color: $mainLightColor;
+  }
+  .hero__title--dark {
+    color: $mainDarkColor;
+    font-size: 34px;
+    line-height: 0.91;
+  }
+  .hero__image {
+    width: 143px;
+    bottom: 0;
+    right: 247px;
+  }
+  .hero__btn--products {
+    width: 62px;
+    height: 24px;
+    top: 202px;
+    padding: 0 5px;
+  }
+  .hero__btn--him {
+    top: 202px;
+    left: 105px;
+    width: 83px;
+    height: 24px;
+    padding: 0 5px;
+  }
+  .hero__image-milk {
+    position: absolute;
+    width: 124px;
+    bottom: 28px;
+  }
+  .hero__image-girl {
+    position: absolute;
+    width: 168px;
+    right: 34px;
+    bottom: 0;
+  }
+  .hero__text {
+    position: absolute;
+    width: 122px;
+    bottom: 59px;
+    left: 154px;
+    font-family: $mainFont;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.5;
+    color: $mainLightColor;
+  }
+ .hero__button-arrow {
+    position: absolute;
+    left: 154px;
+    bottom: 34px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .hero__circle-min {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 94px;
+    right: 35px;
+    border-radius: 50%;
+    background-color: $mainLightColor;    
+  }
+  .hero__quantity {
+    position: absolute;
+    top: 96px;
+    right: 44px;
+    font-family: $titleFont;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $mainDarkColor;
+  }
+  .hero__pos-text {
+    position: absolute;
+    top: 128px;
+    right: 44px;
+    font-family: $mainFont;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $mainLightColor;
+  }
+  .hero__circle-min_second {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 151px;
+    right: 35px;
+    border-radius: 50%;
+    background-color: $mainLightColor;    
+  }
+  .hero__quantity_second {
+    position: absolute;
+    top: 152px;
+    right: 44px;
+    font-family: $titleFont;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $mainDarkColor;
+  }
+  .hero__pos-text_second {
+    position: absolute;
+    top: 184px;
+    right: 44px;
+    font-family: $mainFont;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $mainLightColor;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero__container {
+    max-width: 1280px;
+    height: 665px;
+    padding: 0 115px;
+  }
+  .hero__circle {
+    top: 52px;
+    right: 267px;
+    width: 538px;
+    height: 538px;
+    border-radius: 50%;
+    background-color: $LabelColor;
+  }
+    .hero__title {
+    width: 277px;
+    top: 171px;
+    font-family: $titleFont;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: $mainLightColor;
+  }
+  .hero__title--dark {
+    color: $mainDarkColor;
+    font-size: 58px;
+    line-height: 0.91;
+  }
+  .hero__image {
+    width: 236px;
+    bottom: 0;
+    right: 450px;
+  }
+  .hero__btn--products {
+    width: 102px;
+    height: 40px;
+    top: 333px;
+    font-size: 14px;
+    line-height: 1.29px;
+
+  }
+  .hero__btn--him {
+    top: 333px;
+    left: 234px;
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.29;
+
+  }
+  .hero__image-milk {
+    width: 188px;
+    left: 77px;
+    bottom: 45px;
+  }
+  .hero__image-girl {
+    width: 293px;
+    right: 89px;
+    bottom: 0;
+  }
+  .hero__text {
+    width: 200px;
+    bottom: 102px;
+    left: 295px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+ .hero__button-arrow {
+    left: 295px;
+    bottom: 56px;
+    width: 26px;
+    height: 26px;
+  }
+  .hero__circle-min {
+    width: 30px;
+    height: 30px;
+    top: 156px;
+    right: 97px;   
+  }
+  .hero__quantity {
+    top: 160px;
+    right: 115px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .hero__pos-text {
+    top: 215px;
+    right: 115px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+  .hero__circle-min_second {
+    width: 30px;
+    height: 30px;
+    top: 248px;
+    right: 97px;   
+  }
+  .hero__quantity_second {
+    top: 251px;
+    right: 115px;
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .hero__pos-text_second {
+    top: 306px;
+    right: 115px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}

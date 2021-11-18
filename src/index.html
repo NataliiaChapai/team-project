@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -21,12 +31,20 @@
     <!-- Шапка сайту -->
     <header class="header">
       <include src="./partials/header.html"></include>
+      <include src="./partials/mobile-menu.html"></include>
     </header>
     <main>
       <!-- Герой-->
       <section class="hero">
         <include src="./partials/hero.html"></include>
       </section>
+      <!-- Модальне меню-->
+      <section class="hero">
+        <include src="./partials/modal.html"></include>
+      </section>
+
+      <!-- Мобільне меню -->
+
       <!-- Продукти-->
       <section class="products">
         <include src="./partials/products.html"></include>
@@ -48,8 +66,9 @@
         <include src="./partials/reviews.html"></include>
       </section>
       <!-- Контакти-->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <include src="./partials/contacts.html"></include>
+        <include src="./partials/modal-map.html"></include>
       </section>
     </main>
     <!-- Підвал-->
@@ -59,5 +78,14 @@
 
     <!-- Скрипт -->
     <script src="./index.js"></script>
+    <script src="./mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./modal.js"></script>
+    <script src="./modal-map.js"></script>
   </body>
 </html>
