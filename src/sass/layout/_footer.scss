@@ -19,18 +19,21 @@
   padding-right: 20px;
   @media screen and (min-width: 480px) {
     max-width: 480px;
+    margin-bottom: 43px;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-left: 36px;
     padding-right: 36px;
+    margin-bottom: 91px;
   }
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
     padding-left: 115px;
     padding-right: 115px;
+    margin-bottom: 97px;
   }
 }
 .footer__text__title--one {
@@ -85,14 +88,6 @@
   @media screen and (min-width: 768px), (min-width: 1280px) {
     width: 50%;
   }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 91px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 97px;
-  }
 }
 
 .footer__list__social {
@@ -130,7 +125,7 @@
 
 .footer__text__tel {
   text-align: right;
-  margin-bottom: 43px;
+  // margin-bottom: 43px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
