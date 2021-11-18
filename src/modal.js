@@ -1,29 +1,28 @@
 (() => {
     const modal = document.querySelector('.js-modal-container');
-    const openModalBtn = document.querySelector('.js-open-modal');
-    const closeModalBtn = document.querySelector('.js-close-modal');
+    const openModalBtn = document.querySelectorAll('.js-open-modal');
+    const closeModalBtn = document.querySelectorAll('.js-close-modal');
   
     const toggleModal = () => {
       const isModalOpen =
-        openModalBtn.getAttribute('aria-expanded') === 'true' || false;
-      openModalBtn.setAttribute('aria-expanded', !isModalOpen);
+      modal.getAttribute('aria-expanded') === 'true' || false;
+      modal.setAttribute('aria-expanded', !isModalOpen);
       modal.classList.toggle('is-open-modal');
   
-      const scrollLockMethod = !isModalOpen
+      const scrollLockMethod = isModalOpen
         ? 'enableBodyScroll'
         : 'disableBodyScroll';
       bodyScrollLock[scrollLockMethod](document.body);
+
+      document.querySelector('.js-menu-container').classList.remove('is-open')
+      document.querySelector('.js-open-menu').setAttribute('aria-expanded', false);
+      
     };
   
-    openModalBtn.addEventListener('click', toggleModal);
-    closeModalBtn.addEventListener('click', toggleModal);
-  
-    // Закрываем мобильное меню на более широких экранах
-    // в случае изменения ориентации устройства.
-    window.matchMedia('(min-width: 2000px)').addEventListener('change', e => {
-      if (!e.matches) return;
-      modal.classList.remove('is-open-modal');
-      openModalBtn.setAttribute('aria-expanded', false);
-      bodyScrollLock.enableBodyScroll(document.body);
+    openModalBtn.forEach(function(elem) {
+      elem.onclick = toggleModal;
+    });
+    closeModalBtn.forEach(function(elem) {
+      elem.onclick = toggleModal;
     });
   })();
