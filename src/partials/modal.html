@@ -1,0 +1,40 @@
+<!-- modalka-->
+<div class="backdrop js-modal-container" id="modal">
+  <div class="modal">
+    <p class="modal__tittle">Leave your details, we will call you back</p>
+    <form action="">
+      <div class="modal__form">
+        <label for="name" class="modal__label">name</label>
+        <span class="modal__data">
+          <input type="text" name="name" id="name" class="modal__input" />
+          <svg class="modal-input__icon">
+            <use href="./images/sprite2.svg#icon-person-black-2"></use>
+          </svg>
+        </span>
+
+        <label for="tel" class="modal__label">phone</label>
+        <span class="modal__data">
+          <input type="tel" name="tel" id="tel" class="modal__input" />
+          <svg class="modal-input__icon">
+            <use href="./images/sprite2.svg#icon-phone-black-2"></use>
+          </svg>
+        </span>
+
+        <label for="email" class="modal__label">mail</label>
+        <span class="modal__data">
+          <input type="email" name="email" id="email" class="modal__input" />
+          <svg class="modal-input__icon">
+            <use href="./images/sprite2.svg#icon-email-black-2"></use>
+          </svg>
+        </span>
+      </div>
+
+      <button type="submit" class="modal__btn">Send</button>
+    </form>
+    <button type="button" class="modal__close js-close-modal">
+      <svg class="modal-close__icon">
+        <use href="./images/sprite2.svg#icon-vector-2"></use>
+      </svg>
+    </button>
+  </div>
+</div>

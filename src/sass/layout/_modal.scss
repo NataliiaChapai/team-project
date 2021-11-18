@@ -1,0 +1,154 @@
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(214, 100, 134, 0.274);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2000;
+  transform: scale(1);
+  transition: transform 250ms ease;
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  min-height: 400px;
+  background-color: $mainBackgroundColor;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: transform 300ms ease;
+  padding: 40px;
+
+  @media screen and (max-width: 767px) {
+    width: 400px;
+  }
+}
+
+.backdrop.is-open-modal {
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.modal__tittle {
+  color: $mainDarkColor;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+  width: 100%;
+}
+.modal__data {
+  display: block;
+  position: relative;
+}
+.modal__label {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: $LabelColor;
+}
+.modal__input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid $mainColor;
+  color: $accentDarkBtnColor;
+  margin-top: 4px;
+  display: inline-block;
+  padding-left: 42px;
+  outline: none;
+}
+.modal__input:hover,
+.modal__input:focus {
+  border: 1px solid $accentDarkBtnColor;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input:hover + .modal-input__icon,
+.modal__input:focus + .modal-input__icon {
+  fill: $accentDarkBtnColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input__icon {
+  position: absolute;
+  fill: $LabelColor;
+  width: 18px;
+  height: 18px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+.modal__btn {
+  background-color: $accentDarkBtnColor;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $mainBackgroundColor;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 55px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 250ms ease;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+.modal__btn:hover,
+.modal__btn:focus {
+  background: $mainLightColor;
+  color: $accentDarkBtnColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 50%;
+  border: 1px solid $LabelColor;
+  background: $mainBackgroundColor;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  &:hover {
+    border: $mainBackgroundColor;
+  }
+}
+
+.modal__close:hover .modal-close__icon {
+  fill: $accentDarkBtnColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close__icon {
+  fill: $socialIconColor;
+  width: 12px;
+  height: 12px;
+}
+// .hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   overflow: hidden;
+//   border: 0;
+//   clip: rect(0 0 0 0);
+// }
