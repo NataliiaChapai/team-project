@@ -10,8 +10,8 @@
       modal.classList.toggle('is-open-modal');
   
       const scrollLockMethod = !isModalOpen
-        ? 'disableBodyScroll'
-        : 'enableBodyScroll';
+        ? 'enableBodyScroll'
+        : 'disableBodyScroll';
       bodyScrollLock[scrollLockMethod](document.body);
     };
   
