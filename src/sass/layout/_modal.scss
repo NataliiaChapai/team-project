@@ -9,7 +9,7 @@
   justify-content: center;
 
   z-index: 2000;
-  transform: scale(1);
+  transform: scale(0);
   transition: transform 250ms ease;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .backdrop.is-open-modal {
-  transform: translateX(100%);
+  transform: scale(1);
   transition: transform 250ms ease-in-out;
 }
 
