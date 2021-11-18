@@ -27,6 +27,12 @@
   background-color: transparent;
 }
 
+.header__burger-icon {
+  width: 20px;
+  height: 12px;
+  fill: $mainDarkColor;
+}
+
 @media (max-width: 767px) {
 /*   .header {
     position: fixed;
