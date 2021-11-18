@@ -1,59 +1,35 @@
-<div class="header__body">
+<div class="header__body" id="header">
   <a href="#" class="header__logo">
     <img src="../src/images/logo.png" alt="logo" />
   </a>
   <nav class="header__nav">
     <ul class="header__nav-link">
-      <li class="nav-link__item"><a href="#">Home</a></li>
-      <li class="nav-link__item"><a href="#">About us</a></li>
-      <li class="nav-link__item"><a href="#">How it's made?</a></li>
-      <li class="nav-link__item"><a href="#">Our products</a></li>
-      <li class="nav-link__item"><a href="#">Contact</a></li>
+      <li class="nav-link__item"><a href="#header">Home</a></li>
+      <li class="nav-link__item"><a href="#about">About us</a></li>
+      <li class="nav-link__item"><a href="#about">How it's made?</a></li>
+      <li class="nav-link__item"><a href="#products">Our products</a></li>
+      <li class="nav-link__item"><a href="#contacts">Contact</a></li>
     </ul>
   </nav>
-  <button class="header__burger js-open-menu" type="button" aria-expanded="false" aria-controls="header__burger"
-    data-menu-button>
+  <button
+    class="header__burger js-open-menu"
+    type="button"
+    aria-expanded="false"
+    aria-controls="header__burger">
     <svg class="header__burger-icon" width="20" height="12">
       <use href="./images/sprite.svg#icon-burger"></use>
     </svg>
   </button>
-  <!-- --------------------------------------------------------------- -->
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <div class="close-button__container">
-      <button class="menu__button-close js-close-menu">
-        <svg width="14" height="14">
-          <use href="./images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="buy-button__container">
-      <a href="">
-        <button type="button" class="btn btn_color_light btn-menu">
-          Buy now
-          <svg class="about__svg-btn">
-            <use href="./images/sprite.svg#icon-btn"></use>
-          </svg>
-        </button>
-      </a>
-    </div>
-    <div class="menu-link__container">
-      <ul class="menu-link">
-        <li class="menu-link__item"><a href="">Home</a></li>
-        <li class="menu-link__item"><a href="">About us</a></li>
-        <li class="menu-link__item"><a href="">How it's made?</a></li>
-        <li class="menu-link__item"><a href="">Our products</a></li>
-        <li class="menu-link__item"><a href="">Contact</a></li>
-      </ul>
-    </div>
+  <div class="header__button-buy">
+    <button
+      type="button"
+      class="btn btn_color_light js-open-modal"
+      aria-controls="header__button"
+    >
+      Buy now
+      <svg class="about__svg-btn">
+        <use href="./images/sprite.svg#icon-btn"></use>
+      </svg>
+    </button>
   </div>
-
-
-<a class="header__button-buy" href="">
-  <button type="button" class="btn btn_color_light">
-    Buy now
-    <svg class="about__svg-btn">
-      <use href="./images/sprite.svg#icon-btn"></use>
-    </svg>
-  </button>
-</a>
 </div>

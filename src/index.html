@@ -38,6 +38,11 @@
       <section class="hero">
         <include src="./partials/hero.html"></include>
       </section>
+      <!-- Модальне меню-->
+      <section class="hero">
+        <include src="./partials/modal.html"></include>
+      </section>
+
       <!-- Мобільне меню -->
 
       <!-- Продукти-->
@@ -61,8 +66,9 @@
         <include src="./partials/reviews.html"></include>
       </section>
       <!-- Контакти-->
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <include src="./partials/contacts.html"></include>
+        <include src="./partials/modal-map.html"></include>
       </section>
     </main>
     <!-- Підвал-->
@@ -73,5 +79,13 @@
     <!-- Скрипт -->
     <script src="./index.js"></script>
     <script src="./mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./modal.js"></script>
+    <script src="./modal-map.js"></script>
   </body>
 </html>
