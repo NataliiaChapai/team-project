@@ -6,8 +6,18 @@
   @media screen and (min-width: 768px) {
     padding-top: 130px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 125px;
+  }
+  @media screen and (max-width: 767px), (min-width: 1280px) {
+    margin: auto;
+    background-image: url(/images/milkdrops.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/milkdrops-2x.png);
+    }
+    background-repeat: no-repeat;
+    background-position: bottom 5% right 50%;
+    background-size: contain;
   }
 }
 .about__container {
@@ -83,13 +93,13 @@
   }
   @media screen and (min-width: 1280px) {
     // padding: 0 115px;
-    background-image: url(/images/milkdrops.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/milkdrops-2x.png);
-    }
-    background-repeat: no-repeat;
-    background-position: bottom 35px right 50%;
-    background-size: contain;
+    // background-image: url(/images/milkdrops.png);
+    // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    //   background-image: url(/images/milkdrops-2x.png);
+    // }
+    // background-repeat: no-repeat;
+    // background-position: bottom 35px right 50%;
+    // background-size: contain;
   }
 }
 
@@ -107,18 +117,18 @@
   }
 }
 
-.about__text-container {
-  @media screen and (max-width: 767px) {
-    margin: auto;
-    background-image: url(/images/milkdrops.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/milkdrops-2x.png);
-    }
-    background-repeat: no-repeat;
-    background-position: bottom 60px right 50%;
-    background-size: contain;
-  }
-}
+// .about__text-container {
+//   @media screen and (max-width: 767px) {
+//     margin: auto;
+//     background-image: url(/images/milkdrops.png);
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(/images/milkdrops-2x.png);
+//     }
+//     background-repeat: no-repeat;
+//     background-position: bottom 60px right 50%;
+//     background-size: contain;
+//   }
+// }
 
 .about__text-first {
   // width: 220px;
