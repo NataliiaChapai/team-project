@@ -54,11 +54,14 @@
   width: 62px;
   height: 24px;
   top: 318px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: $mainFont;
   font-size: 8px;
   line-height: 1.25;
   color: $mainLightColor;
-  padding: 0 5px;
+  padding: 0;
 }
 
 .hero__btn--him {
@@ -67,11 +70,14 @@
   left: 99px;
   width: 83px;
   height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: $mainFont;
   font-size: 8px;
   line-height: 1.25;
   color: $mainDarkColor;
-  padding: 0 5px;
+  padding: 0;
 }
 
 @media (max-width: 767px) {
@@ -128,14 +134,13 @@
     width: 62px;
     height: 24px;
     top: 202px;
-    padding: 0 5px;
   }
   .hero__btn--him {
     top: 202px;
     left: 105px;
     width: 83px;
     height: 24px;
-    padding: 0 5px;
+   
   }
   .hero__image-milk {
     position: absolute;
@@ -166,6 +171,7 @@
     width: 18px;
     height: 18px;
     cursor: pointer;
+    padding: 0;
   }
   .hero__circle-min {
     position: absolute;
@@ -174,7 +180,8 @@
     top: 94px;
     right: 35px;
     border-radius: 50%;
-    background-color: $mainLightColor;    
+    background-color: $mainLightColor;  
+    padding: 0;  
   }
   .hero__quantity {
     position: absolute;
@@ -271,7 +278,6 @@
     top: 333px;
     font-size: 14px;
     line-height: 1.29px;
-
   }
   .hero__btn--him {
     top: 333px;
@@ -280,7 +286,6 @@
     height: 40px;
     font-size: 14px;
     line-height: 1.29;
-
   }
   .hero__image-milk {
     width: 188px;

@@ -51,7 +51,11 @@
 
 @media (min-width: 768px) {
   .header {
+    transition: transform 500ms ease-in-out;
     background-color: transparent;
+  }
+  .header.hide {
+    transform: translateY(-89px);
   }
   .header__body {
     max-width: 768px;
